@@ -11,13 +11,16 @@ body {
 	margin: 5px auto;  
 	padding: 50px;
 }
-.photo,
 .name {
 	text-align:  center;
 	margin-top: 15px;
 }
+.photo {
+	width: 140px;
+	margin: 10px auto;
+}
 .avatar {
-	width: 140px;	
+	width: 100%;	
 }
 .block {
 	font-size: 18px;
