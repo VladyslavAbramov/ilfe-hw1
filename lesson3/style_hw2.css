@@ -135,7 +135,7 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.footer_link-active {
+.footer_link:hover {
 	text-decoration: underline;
 }
 .copyright {
@@ -167,6 +167,13 @@ body {
 	clear: both;
 	visibility: hidden;
 }
+.menu_items-float:hover {
+	background-color: #353535;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+	margin-right: 14px;
+	margin-left: 9px;
+}
 /***************INLINE-BLOCK******/
 .header-inline {
 	margin-top: 20px;
@@ -186,4 +193,11 @@ body {
 	color: #fff;
 	padding: 10px 16px;
 	font-size: 16px;
+}
+.menu_items-inline:hover {
+	background-color: #353535;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+	margin-right: 14px;
+	margin-left: 9px;
 }
