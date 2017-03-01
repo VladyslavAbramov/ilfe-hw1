@@ -36,7 +36,7 @@ body {
 }
 .menu_list {
 	display: flex;
-	margin-left: -10px;
+	/*margin-left: -10px;*/
 }
 .menu_items {
 	list-style: none;	
@@ -53,12 +53,18 @@ body {
 	margin-right: 15px;
 	margin-left: 10px;
 }
+.menu_link-first {
+	margin-left: 0px;
+}
 .menu_link:hover {
 	background-color: #353535;
 	border-right: 1px solid #838383;
 	border-left: 1px solid #838383;
 	margin-right: 14px;
 	margin-left: 9px;
+}
+.menu_link-first:hover {
+	margin-left: -1px;
 }
 /****************CONTENT***********/
 .container {
