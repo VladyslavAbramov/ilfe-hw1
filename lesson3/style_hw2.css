@@ -34,14 +34,14 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#454444',GradientType=1 ); /* ie6-9 */
 	margin-top: 40px;
 }
-.menu_list {
+.menu__list {
 	display: flex;
 	/*margin-left: -10px;*/
 }
-.menu_items {
+.menu__items {
 	list-style: none;	
 }
-.menu_link {
+.menu__link {
 	text-decoration: none;
 	color: #fff;
 	font-size: 15px;
@@ -53,17 +53,17 @@ body {
 	margin-right: 15px;
 	margin-left: 10px;
 }
-.menu_link-first {
+.menu__link-first {
 	margin-left: 0px;
 }
-.menu_link:hover {
+.menu__link:hover {
 	background-color: #353535;
 	border-right: 1px solid #838383;
 	border-left: 1px solid #838383;
 	margin-right: 14px;
 	margin-left: 9px;
 }
-.menu_link-first:hover {
+.menu__link-first:hover {
 	margin-left: -1px;
 }
 /****************CONTENT***********/
@@ -79,16 +79,16 @@ body {
 .article {
 	width: 70%;
 }
-.aside_item {
+.aside__item {
 	list-style: none;
 	border-top: 1px solid #c8c8c8;
 	border-left: 1px solid #c8c8c8;
 	border-right: 1px solid #c8c8c8;
 }
-.aside_menu:last-child {
+.aside__menu:last-child {
 	border-bottom: 1px solid #c8c8c8;
 }
-.aside_link {
+.aside__link {
 	font-size: 15px;
 	text-decoration: none;
 	color: #656363;
@@ -96,7 +96,7 @@ body {
 	padding: 10px 24px;
 	display: block;			
 }
-.aside_link:hover {
+.aside__link:hover {
 	color: #000;
 	background-color: #f9f9f9;
 	padding-left: 40px;
@@ -125,13 +125,13 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-.footer_items {
+.footer__items {
 	list-style: none;
 	margin-right: 15px;
 	margin-left: 10px;
 	display: inline-block;
 }
-.footer_link {
+.footer__link {
 	text-decoration: none;
 	color: #444444;
 	font-size: 15px;
@@ -141,7 +141,7 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.footer_link:hover {
+.footer__link:hover {
 	text-decoration: underline;
 }
 .copyright {
@@ -157,7 +157,7 @@ body {
 	width: 100%;
 	background-color: #535252;
 }
-.menu_items-float {
+.menu__items-float {
 	list-style: none;
 	margin-right: 15px;
 	margin-left: 10px;
@@ -173,7 +173,7 @@ body {
 	clear: both;
 	visibility: hidden;
 }
-.menu_items-float:hover {
+.menu__items-float:hover {
 	background-color: #353535;
 	border-right: 1px solid #838383;
 	border-left: 1px solid #838383;
@@ -190,7 +190,7 @@ body {
 	background-color: #535252;
 	font-size: 0;
 }
-.menu_items-inline {
+.menu__items-inline {
 	list-style: none;
 	margin-right: 15px;
 	margin-left: 10px;
@@ -200,7 +200,7 @@ body {
 	padding: 10px 16px;
 	font-size: 16px;
 }
-.menu_items-inline:hover {
+.menu__items-inline:hover {
 	background-color: #353535;
 	border-right: 1px solid #838383;
 	border-left: 1px solid #838383;
