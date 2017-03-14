@@ -1,0 +1,307 @@
+* {
+	box-sizing: border-box;
+}
+/************header**********/
+.header {
+	background-image: url(img/header_background.png);
+}
+.header__centre {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.header__menu {
+	display: flex;
+	list-style: none;
+}
+.header__link {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 25px;
+}
+.header__link:hover {
+	color: #56a1ce;
+}
+/************preview*********************/
+.preview {
+	background-image: url(img/grad.png);
+	background-size: cover;
+}
+.preview__centre {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	padding-bottom: 25px;
+}
+.preview__info {
+	color: #fff;
+	width: 30%;
+	text-align: justify;
+	margin-top: 65px;
+	display: flex;
+	flex-direction: column;
+}
+.preview__title {
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+.preview__text {
+	margin-top: 20px;
+	line-height: 22px;
+}
+.preview__button {
+	color: #fff;
+	font-size: 25px;
+	background-color: #56a1ce;
+	width: 190px;
+	height: 55px;
+	border: none;
+	border-radius: 3px;
+	margin: 60px auto 0;
+	cursor: pointer;
+}
+.absolute {
+	position: absolute;
+}
+.page1 {
+	top: 10%;
+	left: 17%;	
+}
+.page2 {
+	top: 19%;
+	left: 0%;
+}
+.page3 {
+	top: 30%;
+	left: 4%;
+}
+.page4 {
+	top:103%;
+	left: 4.6%;
+}
+/*********info***************/
+.info {
+	background-color: #fff;
+	padding-bottom: 60px;
+}
+.subscription {
+	width: 80%;
+	margin: 75px auto 0;
+	background-color: #d5d5d4;
+	color: #373737;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	z-index: 2; /* не знаю почему, но не работает */
+}
+.subscription__email {
+	height: 45px;
+	padding: 15px;
+	border: none;
+	border-radius: 3px;
+}
+.subscription__submit {
+	height: 45px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #56a1ce;
+	cursor: pointer;
+	list-style: none;
+}
+.shadow__picture {
+	position: absolute;
+	bottom: -30px;
+	left: calc(50% - 480px);
+	/*margin-left: -480px; */
+	z-index: 1; /*  не работает*/
+}
+.article {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.article__item {
+	width: 30%;
+	margin-top: 70px;
+}
+.article__title {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+}
+.article__text {
+	margin-top: 20px;
+	line-height: 22px;
+}
+.article__button {
+	width: 85px;
+	height: 30px;
+	font-size: 15px;
+	margin-top: 25px;
+	background: linear-gradient(to top,#e4e4e4 ,#fff);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.article__picture {
+	margin-right: 5px;
+}
+/**********pre-footer*****************/
+.pre-footer {
+	background-image: url(img/pre-footer.png);
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	padding: 30px 0;
+	justify-content: space-between;
+}
+.pre-footer__centre {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.pre-footer__item {
+	width: 30%;
+}
+.pre-footer__title {
+	padding-bottom: 8px;
+	border-bottom: 3px solid black;
+	font-size: 22px;
+}
+.pre-footer__text {
+	margin-top: 25px;
+	line-height: 22px;
+}
+.pre-footer__button {
+	width: 70px;
+	height: 35px;
+	background: linear-gradient(to top, #1456ac ,#1d8ed4);
+	margin-top: 25px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	color: #fff;
+}
+.pre-footer__list {
+	margin-top: 25px;
+	list-style-image: url(img/Arrow.png)
+}
+.pre-footer__list-item {
+	line-height: 25px;
+}
+.pre-footer__form {
+	margin-top: 25px;
+}
+.pre-footer__name, 
+.pre-footer__mail,
+.pre-footer__textarea {
+	background-color: #111010;
+	padding: 10px;
+	border-radius: 30px;
+	border: none;
+	margin-bottom: 8px;
+	color: #fff;
+	/*не знаю как сделать эффект вжатости*/
+}
+.pre-footer__name,
+.pre-footer__mail, {
+	width: 70%;
+}
+.pre-footer__textarea {
+	width: 100%;
+	min-height: 100px;
+	resize: none;
+	text-align: center; 
+}
+/**********style placeholder*********/
+.placeholder::-webkit-input-placeholder {
+		color: #fff;
+}
+.placeholder::-moz-placeholder {
+		color: #fff;
+}
+.placeholder:-moz-placeholder {
+		color: #fff;
+}
+.placeholder:-ms-input-placeholder {
+		color: #fff;
+}
+.placeholder:focus::-webkit-input-placeholder {
+		color: transparent
+}
+.placeholder:focus::-moz-placeholder          {
+		color: transparent
+}
+.placeholder:focus:-moz-placeholder           {
+		color: transparent
+}
+.placeholder:focus:-ms-input-placeholder      {
+		color: transparent
+}
+
+/********footer*************/
+.footer {
+	background-color: #050505;
+	border-top: 1px solid #4e4949;
+}
+.footer__centre {
+	width: 80%;
+	margin: 0 auto;
+	color: #fff;
+	padding: 15px 0;
+	font-size: 12px;
+}
+/**********animation******************/
+.page1 {
+	animation: animation-page1 4s 1 ease-in-out;
+}
+@keyframes animation-page1 {
+  0% { 
+    opacity: 0; 
+  } 
+  33% { 
+    opacity: 1;
+  }
+}
+.page2 {
+	animation: animation-page2 4s 1 ease-in-out;
+}
+@keyframes animation-page2 {
+  0% { 
+    opacity: 0; 
+  } 
+  33% {
+  	opacity: 0;
+  }
+  66% { 
+    opacity: 1;
+  }
+}
+.page3,
+.page4 {
+	animation: animation-page3 4s 1 ease-in-out;
+}
+@keyframes animation-page3 {
+  0% { 
+    opacity: 0; 
+  }
+  66% {
+  	opacity: 0;
+  } 
+  100% { 
+    opacity: 1;
+  }
+}
