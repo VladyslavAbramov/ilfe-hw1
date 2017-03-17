@@ -65,24 +65,21 @@
 	margin: 60px auto 0;
 	cursor: pointer;
 }
-.absolute {
-	position: absolute;
-}
 .page1 {
+	position: absolute;
 	top: 10%;
 	left: 17%;	
 }
 .page2 {
+	position: absolute;
 	top: 19%;
 	left: 0%;
 }
 .page3 {
+	position: absolute;
 	top: 30%;
 	left: 4%;
-}
-.page4 {
-	top:103%;
-	left: 4.6%;
+	-webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
 }
 /*********info***************/
 .info {
@@ -101,6 +98,35 @@
 	padding: 10px;
 	position: relative;
 	z-index: 2; /* не знаю почему, но не работает */
+
+}
+.subscription:before, .subscription:after {
+	z-index: -1;
+	position: absolute;
+	content: '';
+	bottom: 9px;
+	left: 10px;
+	width: 50%;
+	top: 65%;
+	max-width:300px;
+	background: #777;
+	-webkit-box-shadow: 0 15px 10px #777;
+	-moz-box-shadow: 0 15px 10px #777;
+	box-shadow: 0 15px 10px #777;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.subscription:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
 }
 .subscription__email {
 	height: 45px;
@@ -115,15 +141,6 @@
 	color: #fff;
 	background-color: #56a1ce;
 	cursor: pointer;
-}
-.shadow__picture {
-	width: 80%;
-	position: absolute;
-	bottom: -35%;
-	left: 10%;
-	/*transform: translate(50%);*/
-	/*margin: 0 auto;*/
-	z-index: 1; /*  не работает*/
 }
 .article {
 	width: 80%;
@@ -229,28 +246,28 @@
 }
 /**********style placeholder*********/
 .placeholder::-webkit-input-placeholder {
-		color: #fff;
+	color: #fff;
 }
 .placeholder::-moz-placeholder {
-		color: #fff;
+	color: #fff;
 }
 .placeholder:-moz-placeholder {
-		color: #fff;
+	color: #fff;
 }
 .placeholder:-ms-input-placeholder {
-		color: #fff;
+	color: #fff;
 }
 .placeholder:focus::-webkit-input-placeholder {
-		color: transparent
+	color: transparent
 }
 .placeholder:focus::-moz-placeholder          {
-		color: transparent
+	color: transparent
 }
 .placeholder:focus:-moz-placeholder           {
-		color: transparent
+	color: transparent
 }
 .placeholder:focus:-ms-input-placeholder      {
-		color: transparent
+	color: transparent
 }
 
 /********footer*************/
@@ -291,8 +308,7 @@
     opacity: 1;
   }
 }
-.page3,
-.page4 {
+.page3 {
 	animation: animation-page3 4s 1 ease-in-out;
 }
 @keyframes animation-page3 {
@@ -306,32 +322,22 @@
     opacity: 1;
   }
 }
-/******************/
+/*******************************/
 @media (max-width: 1120px) {
 	.subscription {
 		flex-direction: column;
 		min-height: 130px;
-		/*padding-bottom: 20px;*/
 	}
 	.subscription__text {
 		margin-bottom: 10px;
 		text-align: center;
 	}
-	.shadow__picture {
-		display: none;
-	}
 	.preview__centre {
-	display: flex;
-	flex-direction: column;
-	/*justify-content: center;*/
-	/*padding-top: 530px;*/
+		display: flex;
+		flex-direction: column;
 	}
 	.preview__info {
 		width: 100%;
 		margin: 530px auto 0;
 	}
-	.page4 {
-	top:67%;
-	left: 4.8%;
-}
 }
