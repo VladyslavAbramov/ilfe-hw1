@@ -5,12 +5,14 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animation.css">
+	<link rel="stylesheet" type="text/css" href="media_queries.css">
 </head>
 <body>
 	<header class="header">
-		<div class="header__centre">
+		<div class="header__wrapper centre">
 			<div class="header__logo">
-				<img class="header__picture" src="img/logo.png">
+				<a href="#"><img class="header__picture" src="img/logo.png"></a>
 			</div>
 			<ul class="header__menu">
 				<li class="header__item">
@@ -35,10 +37,10 @@
 		</div>
 	</header>
 	<div class="preview">
-		<div class="preview__centre">
-			<img class="page1" src="img/page3.png">
-			<img class="page2" src="img/page2.png">
-			<img class="page3" src="img/page1.png">
+		<div class="preview__wrapper centre">
+			<img class="preview__page1" src="img/page3.png">
+			<img class="preview__page2" src="img/page2.png">
+			<img class="preview__page3" src="img/page1.png">
 			<div class="preview__info">
 				<div class="preview__title">
 					Lorem ipsum dolor sit
@@ -54,139 +56,139 @@
 		</div>
 	</div>
 	<div class="info">
-		<div class="subscription">
+		<div class="subscription centre">
 			<div class="subscription__text">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, consequatur, rem.
 			</div>
-			<form class="subscription__mail">
+			<form class="subscription__form">
 				<input class="subscription__email" type="email" name="email" placeholder="Email">
 				<input class="subscription__submit" type="submit" name="dd" value="Submit">
 			</form>
 		</div>
-		<article class="article">
-			<div class="article__item">
-				<div class="article__title">
-					<img class="article__picture" src="img/article1.png">
+		<div class="articles centre">
+			<div class="container">
+				<div class="container__title">
+					<img class="container__picture" src="img/container1.png">
 					<span>Ultricies Lacinea Pulvinar</span>
 				</div>
-				<div class="article__text">
+				<div class="container__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae, illum, facilis ab provident dolores debitis corrupti quod nihil itaque quasi eligendi error omnis!
 				</div>
-				<button class="article__button">
+				<button class="container__button">
 					See more
 				</button>
 			</div>
-			<div class="article__item">
-				<div class="article__title">
-					<img class="article__picture" src="img/article2.png">
+			<div class="container">
+				<div class="container__title">
+					<img class="container__picture" src="img/container2.png">
 					<span>Magnust Minima sed quia</span>
 				</div>
-				<div class="article__text">
+				<div class="container__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae, illum, facilis ab provident dolores debitis corrupti quod nihil itaque quasi eligendi error omnis!
 				</div>
-				<button class="article__button">
+				<button class="container__button">
 					See more
 				</button>
 			</div>
-			<div class="article__item">
-				<div class="article__title">
-					<img class="article__picture" src="img/article3.png">
+			<div class="container">
+				<div class="container__title">
+					<img class="container__picture" src="img/container3.png">
 					<span>Ultricies lacinia pulvinar</span>
 				</div>
-				<div class="article__text">
+				<div class="container__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae, illum, facilis ab provident dolores debitis corrupti quod nihil itaque quasi eligendi error omnis!
 				</div>
-				<button class="article__button">
+				<button class="container__button">
 					See more
 				</button>
 			</div>
-			<div class="article__item">
-				<img class="article__picture--big" src="img/article4.png">
-				<div class="article__title">
+			<div class="container">
+				<img class="container__picture--big" src="img/container4.png">
+				<div class="container__title">
 					Magnust alecet fernum
 				</div>
-				<div class="article__text">
+				<div class="container__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae, illum, facilis ab provident dolores debitis corrupti quod nihil itaque quasi eligendi error omnis!
 				</div>
 			</div>
-			<div class="article__item">
-				<img class="article__picture--big" src="img/article5.png">
-				<div class="article__title">
+			<div class="container">
+				<img class="container__picture--big" src="img/container5.png">
+				<div class="container__title">
 					Quia porro venium
 				</div>
-				<div class="article__text">
+				<div class="container__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae, illum, facilis ab provident dolores debitis corrupti quod nihil itaque quasi eligendi error omnis!
 				</div>
 			</div>
-			<div class="article__item">
-				<img class="article__picture--big" src="img/article6.png">
-				<div class="article__title">
+			<div class="container">
+				<img class="container__picture--big" src="img/container6.png">
+				<div class="container__title">
 					Dolorest nuwuam et lobiare
 				</div>
-				<div class="article__text">
+				<div class="container__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quae, illum, facilis ab provident dolores debitis corrupti quod nihil itaque quasi eligendi error omnis!
 				</div>
-			</div>
-		</article>
-	</div>
-	<div class="pre-footer">
-		<div class="pre-footer__centre">
-			<div class="pre-footer__item">
-				<div class="pre-footer__title">
-					About Us
-				</div>
-				<div class="pre-footer__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum possimus, mollitia reiciendis nisi quaerat cumque saepe. Architecto itaque voluptatum.
-				</div>
-				<div class="pre-footer__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore labore deleniti beatae vel, deserunt quis deserunt quis deserunt quis.
-				</div>
-				<button class="pre-footer__button">
-					More
-				</button>
-			</div>
-			<div class="pre-footer__item">
-				<div class="pre-footer__title">
-					Quick Links
-				</div>
-				<ul class="pre-footer__list">
-					<li class="pre-footer__list-item">
-						Some Menu Link 1
-					</li>
-					<li class="pre-footer__list-item">
-						Some Menu Link 2
-					</li>
-					<li class="pre-footer__list-item">
-						Some Menu Link 3
-					</li>
-					<li class="pre-footer__list-item">
-						Some Menu Link 4
-					</li>
-					<li class="pre-footer__list-item">
-						Some Menu Link 5
-					</li>
-					<li class="pre-footer__list-item">
-						Some Menu Link 6
-					</li>
-				</ul>
-			</div>
-			<div class="pre-footer__item">
-				<div class="pre-footer__title">
-					Contact Us
-				</div>
-				<form class="pre-footer__form">
-					<input type="text" class="pre-footer__name placeholder" placeholder="Name" name="user_name">
-					<input class="pre-footer__mail placeholder" type="email" placeholder="Email" name="user_email">
-					<textarea class="pre-footer__textarea placeholder" placeholder="Your message"></textarea>
-					<input class="pre-footer__button" type="submit" name="" value="Submit">
-				</form>
 			</div>
 		</div>
 	</div>
 	<footer class="footer">
-		<div class="footer__centre">
+		<div class="footer__wrapper centre">
+			<div class="footer__item">
+				<div class="footer__title">
+					About Us
+				</div>
+				<div class="footer__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum possimus, mollitia reiciendis nisi quaerat cumque saepe. Architecto itaque voluptatum.
+				</div>
+				<div class="footer__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore labore deleniti beatae vel, deserunt quis deserunt quis deserunt quis.
+				</div>
+				<button class="footer__button">
+					More
+				</button>
+			</div>
+			<div class="footer__item">
+				<div class="footer__title">
+					Quick Links
+				</div>
+				<ul class="footer__list">
+					<li class="footer__list-item">
+						Some Menu Link 1
+					</li>
+					<li class="footer__list-item">
+						Some Menu Link 2
+					</li>
+					<li class="footer__list-item">
+						Some Menu Link 3
+					</li>
+					<li class="footer__list-item">
+						Some Menu Link 4
+					</li>
+					<li class="footer__list-item">
+						Some Menu Link 5
+					</li>
+					<li class="footer__list-item">
+						Some Menu Link 6
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<div class="footer__title">
+					Contact Us
+				</div>
+				<form class="footer__form">
+					<input type="text" class="footer__input placeholder" placeholder="Name" name="user_name">
+					<input class="footer__input placeholder" type="email" placeholder="Email" name="user_email">
+					<textarea class="footer__textarea placeholder" placeholder="Your message"></textarea>
+					<input class="footer__button" type="submit" name="" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="copyright__wrapper centre">
 			© 2011 PSD Style All Rights Reserved
 		</div>		
-	</footer>	
+	</div>	
 </body>
 </html>
