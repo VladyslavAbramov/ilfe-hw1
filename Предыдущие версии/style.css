@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #eeeeee;
+}
+.wrapper {
+	background-color: #fff;
+	width: 510px;
+	min-height: 700px;
+	margin: 5px auto;  /*если margin-left: 465px , на моем мониторе все совпадает*/
+	padding-top: 48px;
+}
+.name {
+	margin-left: 136px;
+	font-weight: bold;
+	font-size: 22px;
+}
+img {
+	width: 140px;
+	margin-left: 180px;
+	margin-top: 20px;
+}
+.text {
+	font-size: 18px;
+	margin-left: 60px;
+}
+.student {
+	margin-top: 4px;
+}
+hr {
+	width: 410px;
+	margin-left: 50px;
+	margin-top: 15px;
+
+}
+.list {
+	margin-top: 25px;
+}
+ul{
+	margin-top: 30px;
+	margin-left: 27px;
+}
+li:nth-child(2) {
+	margin-top: 5px;
+}
+li:nth-child(3) {
+	margin-top: 5px;
+}
+.secondHr {
+	margin-top: 18px;
+}
+.number{
+	margin-top: 25px;
+}
+.phone {
+	margin-top: 5px;
+}
+.vk {
+	margin-top: 30px;
+}
+a {
+	display: block;
+	margin-top: 5px;
+}
+.thirdHr {
+	margin-top: 17px;
+}
+.feed {
+	margin-top: 25px;
+}
+.fence {
+	margin-top: 5px;
+}
