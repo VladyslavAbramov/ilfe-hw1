@@ -1,0 +1,23 @@
+.picture {
+	animation: animation-picture 10s infinite ease-in-out;
+}
+@keyframes animation-picture {
+	0% {
+		background-image: url(img/sea.jpg);
+	}
+	32% {
+		background-image: url(img/sea.jpg);
+	}
+	33% {
+		background-image: url(img/sea2.jpg);
+	}
+	65% {
+		background-image: url(img/sea2.jpg);
+	}
+	66% {
+		background-image: url(img/sea3.jpg);
+	}
+	100% {
+		background-image: url(img/sea3.jpg);
+	}
+}
