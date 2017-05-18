@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrayincludes</title>
+</head>
+<body>
+	<script>
+		var arrey = [1, 2, NaN];
+		function includes(arr, searchElement, fromIndex) {
+			if (fromIndex === undefined) {
+				for (i = 0; i < arr.length; i++) {
+					if (arr[i] == searchElement) {
+						return true
+					}
+				}
+			}
+			if (fromIndex >= 0) {
+				for (i=fromIndex; i < arr.length; i++) {
+					if (arr[i] == searchElement) {
+						return true
+					}
+				}
+			}
+			if (fromIndex <= 0) {
+				for (i=arr.length + fromIndex; i < arr.length; i++) {
+					if (arr[i] == searchElement) {
+						return true
+					}
+				}
+			}
+			return false
+		}
+		console.log( includes(arrey, NaN) )
+		//этот код работает когда searchElement число или 'строка'. Если searchElement=NaN, моя функция возвражает false
+		
+	</script>
+
+	
+</body>
+</html> 

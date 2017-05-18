@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array.push</title>
+</head>
+<body>
+	<script>
+		var arrey = ['angel', 'orange', 'cherry', 'lalala'];
+
+		function push(arr) {
+			countElement = arguments.length - 1;
+			for (i = arr.length, j = 1; i < (arr.length + countElement), j < arguments.length; i++, j++) {
+			  arr[i] = arguments[j]
+			}
+			return arr
+		}
+		alert(push(arrey, 2, 3, 'apple'))		
+	</script>
+
+	
+</body>
+</html> 
